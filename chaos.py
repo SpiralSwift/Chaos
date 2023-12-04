@@ -86,7 +86,7 @@ def runge_kutta(func, tset:np.ndarray, state0:np.ndarray, **kwargs):
 
 
 # --- Parameters ---
-tset = np.linspace(0,10000,100000)
+tset = np.linspace(0,1000,10000)
 rt = 1/5 # fraction of data points to ignore
 stable = [0.75,0.125,13.75] # stable population
 state0 = np.asarray([0.75,0.125,13.75,0.75,0.125,13.75]) # initial state
