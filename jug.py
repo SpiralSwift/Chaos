@@ -15,7 +15,7 @@ def food_chain(state, t0, a1 = 5.0 , a2 = 0.1, b1 = 3.0, b2 = 2.0, d1 = 0.4, d2 
     return [dx,dy,dz]
 
 
-tset = np.linspace(0,100,10000)
+tset = np.linspace(0,1000,10000)
 state0 = [0.8,0.3,8]
 
 state = odeint(food_chain, state0, tset)
